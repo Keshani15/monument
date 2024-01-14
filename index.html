@@ -30,6 +30,28 @@
         position: relative;
       }
 
+      h1 {
+        position: absolute;
+        bottom: 20px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-family: "Cormorant Garamond", serif;
+        font-size: 30px;
+        line-height: 1.2;
+      }
+
+      strong {
+        font-size: 35px;
+      }
+
+      p {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 25px;
+        text-align: center;
+        color: #315276;
+        font-weight: bold;
+      }
+
       .heading {
         align-self: start;
         background: rgba(0, 0, 0, 0.5);
@@ -60,8 +82,9 @@
         top: 0;
         z-index: 1000;
         font-family: "Cormorant Garamond", serif;
-        font-size: 30px;
+        font-size: 35px;
         line-height: 1.2;
+        font-weight: bolder;
       }
 
       .navbar2 {
@@ -76,7 +99,7 @@
         font-family: "Rubik Scribble", system-ui;
       }
 
-      .btn {
+      .navbar2 .btn {
         font-size: 25px;
         font-weight: bold;
         padding: 10px 25px;
@@ -107,23 +130,221 @@
         font-family: "Rubik Scribble", system-ui;
         font-weight: bold;
       }
+      .flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .box {
+        width: 400px;
+        height: 400px;
+        background-color: #edb495;
+        color: rgb(60, 67, 74);
+        text-align: center;
+        margin: 10px;
+        padding: 20px;
+        font-size: 18px;
+        box-shadow: 1px 1px 2px lightgray;
+      }
+
+      .section2 img {
+        border: 1px solid transparent;
+        border-radius: 14px;
+      }
+
+      footer {
+        font-size: 11px;
+        margin: 10px 0;
+      }
+
+      #learn {
+        color: #315276;
+        background-color: rgba(255, 255, 255, 0.7);
+        font-weight: bold;
+        border: 1px solid #315276;
+        border-radius: 14px;
+        font-size: 18px;
+        padding: 8px 15px;
+        text-decoration: none;
+        transition: all 200ms ease-in-out;
+      }
+
+      #learn:hover {
+        color: #efa57d;
+        background: #315276;
+      }
+
+      @media (max-width: 900px) {
+        #learn-img {
+          width: 200px;
+          border: 1px solid transparent;
+          border-radius: 14px;
+        }
+      }
     </style>
   </head>
   <body>
     <div class="navbar1">Stonehenge - where history and legend intertwine!</div>
     <div class="navbar2">
-      <button class="btn">BOOK A TRIP TO STONEHENGE</button>
+      <a href="#visit" class="btn">BOOK A TRIP TO STONEHENGE</a>
     </div>
 
-    <section class="hero"></section>
+    <section class="hero">
+      <h1>
+        "There are moments when one feels free from one's own identification
+        with human limitations and inadequacies. At such moments, one imagines
+        that one stands on some spot of a small planet gazing in amazement at
+        the cold yet profoundly moving beauty of the eternal, the unfathomable;
+        life and death flow into one, and there is neither evolution nor
+        destiny; only Being." - Agatha Christie
+      </h1>
+    </section>
     <section class="section1">
       <h2 class="heading">About Stonehenge</h2>
+
+      <p class="first-paragraph">
+        <strong>Stonehenge</strong> is a UNESCO World Heritage Site and one of
+        the most famous archaeological sites in the world. It consists of a
+        circular arrangement of large standing stones, some weighing up to 25
+        tons, set within earthworks. The monument's construction dates back to
+        around 3000 BCE to 2000 BCE, though various phases of development
+        occurred over centuries.
+        <br />
+        <a
+          href="https://en.wikipedia.org/wiki/Stonehenge"
+          target="_blank"
+          id="learn"
+          >Learn more</a
+        >
+      </p>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/109/265/original/download.jpg?1704401655"
+        alt=""
+        class="img-fluid"
+        width="500px"
+        id="learn-img"
+      />
+      <p>
+        The exact purpose of Stonehenge remains a subject of speculation but one
+        cannot deny the overwhelming sense of awe when one visits it! The sheer
+        size and antiquity of Stonehenge makes one feel <em>"small"</em>. One
+        often feels a deep connection to the past when standing amidst the
+        ancient stones. The realization that they are in the presence of a
+        structure built thousands of years ago can be a profound and humbling
+        experience.
+      </p>
     </section>
     <section class="section2">
-      <h2 class="heading">Picture Book</h2>
+      <h2 class="heading">Pictures</h2>
+      <div class="row">
+        <div class="col-4">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/109/263/original/Stonehenge_2066365b_trans_NvBQzQNjv4BqqVzuuqpFlyLIwiB6NTmJwZwVSIA7rSIkPn18jgFKEo0.jpg?1704401633"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-4">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/109/264/original/image-10.jpg?1704401643"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-4">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/552/original/ankit-sood-q0ZLK_D7ngI-unsplash.jpg?1705261449"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/565/original/pexels-photo-1448136.jpeg?1705263796"
+            alt=""
+            class="img-fluid"
+            width="500px"
+          />
+        </div>
+        <div class="col-4">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/564/original/stonehenge-aerial-1440x612.jpg?1705263564"
+            alt=""
+            class="img-fluid mt-4"
+            height="900px"
+          />
+        </div>
+        <div class="col-4">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/566/original/images_%284%29.jpg?1705263965"
+            alt=""
+            class="img-fluid"
+            width="500px"
+          />
+        </div>
+      </div>
     </section>
     <section class="section3">
-      <h2 class="heading">Visit Stonehenge</h2>
+      <h2 class="heading" id="visit">Visit Stonehenge</h2>
+      <div class="flex-container">
+        <div class="box">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/109/267/original/images_%282%29.jpg?1704401669"
+            alt=""
+            class="img-fluid"
+            width="340px"
+          />
+          <p class="m-4">Half-Day Tour</p>
+          <a
+            href="https://stonehengetickets.tours/stonehenge-half-day-tour/"
+            target="_blank"
+            id="learn"
+            >Book Now</a
+          >
+        </div>
+        <div class="box">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/567/original/images_%286%29.jpg?1705265130"
+            alt=""
+            class="img-fluid"
+            width="340px"
+          />
+          <p class="m-4">Private Tour</p>
+          <a
+            href="https://stonehengetickets.tours/stonehenge-private-tour/"
+            target="_blank"
+            id="learn"
+            >Book Now</a
+          >
+        </div>
+        <div class="box">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/568/original/stonehenge-sky-moon-night.jpg?1705265143"
+            alt=""
+            class="img-fluid"
+          />
+          <p class="m-4">Sunset Tour</p>
+          <a
+            href="https://stonehengetickets.tours/stonehenge-sunset-tour/"
+            target="_blank"
+            id="learn"
+            >Book Now</a
+          >
+        </div>
+      </div>
     </section>
+    <footer>
+      Coded by
+      <a href="https://github.com/Keshani15" target="_blank" rel="noreferrer"
+        >Keshani Naidoo</a
+      >
+      <a href="https://github.com/Keshani15" target="_blank" rel="noreferrer">
+        open-sourced on GitHub
+      </a>
+      for the 🗽Favourite Momument Challenge
+    </footer>
   </body>
 </html>
